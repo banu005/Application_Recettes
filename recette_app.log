@@ -1,0 +1,6 @@
+2026-04-07 16:14:57,583 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-07 16:15:31,925 - ApplicationRecettes - INFO - Nouvelle recette ajoutée : Omelette
+2026-04-07 16:16:08,509 - ApplicationRecettes - WARNING - Échec de l'ajout de recette : Omelette (doublon)
+2026-04-07 16:16:21,142 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-07 16:18:37,903 - ApplicationRecettes - WARNING - Échec de l'ajout de recette : Omelette (doublon)
+2026-04-07 16:23:02,090 - ApplicationRecettes - INFO - Fermeture de l'application.

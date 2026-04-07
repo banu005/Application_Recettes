@@ -2,7 +2,7 @@
 application_recettes/
 ├── main.py               
 ├── recette_app/
-│   ├── __init__.py      # initialise en python pour reconnaitre que le dossier est un package
+│   ├── __init__.py      # initialise en python pour reconnaitre que le dossier est un package, il sera vide
 │   ├── models.py        # les attributs pour une recette
 │   ├── actions.py       # les actions de l'utilisateur comme ajouter une recette, lister par ingrédient, détecter les doublons, exporter en JSON
 │   ├── stockage.py      # gère uniquement la lecture et l'écriture du fichier recettes.json
