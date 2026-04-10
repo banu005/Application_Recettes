@@ -4,22 +4,19 @@ from recette_app.models import Recette
 from recette_app.actions import ajouter_recette, lister_par_ingredient
 from recette_app.stockage import charger_recettes, sauvegarder_recettes
 from recette_app.log import configurer_logging
-from recette_app.exceptions import RecetteInvalideError, DoublonRecetteError, FichierDonneesError
+from recette_app.exceptions import (
+    RecetteInvalideError,
+    DoublonRecetteError,
+    FichierDonneesError,
+    NomRecetteInvalideError,
+    IngredientInvalideError,
+    InstructionsInvalideError,
+)
 
 
 def cmd_ajouter(args, recettes, logger):
     """Commande : ajouter une nouvelle recette."""
-    # Validation des entrées via exceptions personnalisées
-    if not args.nom.strip():
-        raise RecetteInvalideError("Le nom de la recette ne peut pas être vide.")
-
     ingredients = [i.strip() for i in args.ingredients.split(",") if i.strip()]
-    if not ingredients:
-        raise RecetteInvalideError("La liste d'ingrédients ne peut pas être vide.")
-
-    if not args.instructions.strip():
-        raise RecetteInvalideError("Les instructions ne peuvent pas être vides.")
-
     nouvelle_recette = Recette(args.nom.strip(), ingredients, args.instructions.strip())
 
     succes, message = ajouter_recette(recettes, nouvelle_recette)
@@ -55,7 +52,6 @@ def cmd_lister(args, recettes, logger):
 
 
 def main():
-    # --- Définition du parseur principal ---
     parser = argparse.ArgumentParser(
         prog="recettes",
         description="Gestionnaire de recettes en ligne de commande."
@@ -68,21 +64,21 @@ def main():
 
     subparsers = parser.add_subparsers(dest="commande", help="Commandes disponibles")
 
-    # --- Sous-commande : add ---
+    # Sous-commande : add
     parser_add = subparsers.add_parser("add", help="Ajouter une nouvelle recette")
-    parser_add.add_argument("nom", help="Nom de la recette")
+    parser_add.add_argument("nom", help="Nom de la recette (minimum 3 caractères)")
     parser_add.add_argument(
         "--ingredients", "-i",
         required=True,
-        help="Liste d'ingrédients séparés par des virgules (ex: 'oeuf, sel, poivre')"
+        help="Ingrédients séparés par des virgules (ex: 'oeuf, sel, poivre')"
     )
     parser_add.add_argument(
         "--instructions", "-inst",
         required=True,
-        help="Instructions de préparation"
+        help="Instructions de préparation (minimum 10 caractères)"
     )
 
-    # --- Sous-commande : list ---
+    # Sous-commande : list
     parser_list = subparsers.add_parser("list", help="Afficher les recettes")
     parser_list.add_argument(
         "--ingredient", "-i",
@@ -92,7 +88,6 @@ def main():
 
     args = parser.parse_args()
 
-    # --- Initialisation ---
     logger = configurer_logging(verbose=args.verbose)
     logger.info("Démarrage de l'application.")
 
@@ -103,21 +98,37 @@ def main():
         logger.error(f"Erreur de chargement : {e}")
         sys.exit(1)
 
-    # --- Dispatch vers la bonne commande ---
     if args.commande == "add":
         try:
             cmd_ajouter(args, recettes, logger)
-        except RecetteInvalideError as e:
-            print(f"[ERREUR] Recette invalide : {e}")
-            logger.error(f"Recette invalide : {e}")
+        except NomRecetteInvalideError as e:
+            print(f"[ERREUR] Nom invalide : {e}")
+            logger.error(str(e))
+            sys.exit(1)
+        except IngredientInvalideError as e:
+            print(f"[ERREUR] Ingrédient invalide : {e}")
+            logger.error(str(e))
+            sys.exit(1)
+        except InstructionsInvalideError as e:
+            print(f"[ERREUR] Instructions invalides : {e}")
+            logger.error(str(e))
             sys.exit(1)
         except DoublonRecetteError as e:
             print(f"[ERREUR] Doublon : {e}")
             logger.warning(str(e))
             sys.exit(1)
+        except RecetteInvalideError as e:
+            print(f"[ERREUR] Recette invalide : {e}")
+            logger.error(str(e))
+            sys.exit(1)
 
     elif args.commande == "list":
-        cmd_lister(args, recettes, logger)
+        try:
+            cmd_lister(args, recettes, logger)
+        except IngredientInvalideError as e:
+            print(f"[ERREUR] Ingrédient invalide : {e}")
+            logger.error(str(e))
+            sys.exit(1)
 
     else:
         parser.print_help()

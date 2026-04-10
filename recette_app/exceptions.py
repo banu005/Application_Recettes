@@ -13,3 +13,17 @@ class DoublonRecetteError(ApplicationRecetteError):
 class FichierDonneesError(ApplicationRecetteError):
     """Exception levée lors d'un problème avec le stockage des données."""
     pass
+
+class NomRecetteInvalideError(ApplicationRecetteError):
+    """Exception levée quand le nom de la recette est invalide."""
+    pass
+
+class IngredientInvalideError(ApplicationRecetteError):
+    """Exception levée quand un ingrédient n'est pas trouvé."""
+    pass
+
+class InstructionsInvalideError(ApplicationRecetteError):
+    """Exception levée quand les instructions sont invalides."""
+    pass
+
+

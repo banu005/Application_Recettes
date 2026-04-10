@@ -28,5 +28,12 @@
             "sucre"
         ],
         "instructions": "préparer la pâte crêpes en ajoutant les ingrédients et mélanger le tout. Puis laisser poser la pâte et dans une crêpière à chauffer, ajouter la pâte et laisser cuire 5min et sortir la crêpe. Vous pouvez ajouter des toppings comme des fruits ou une pâte à tartiner au chocolat ou fraise par exemple"
+    },
+    {
+        "nom": "C",
+        "ingredients": [
+            "f"
+        ],
+        "instructions": "c"
     }
 ]

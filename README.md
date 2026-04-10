@@ -5,14 +5,14 @@ Application en ligne de commande pour gérer une collection de recettes de cuisi
 ## Structure du projet
 
 ```
-application_recettes/
+Application_Recettes/
 ├── main.py
 ├── recette_app/
 │   ├── __init__.py
 │   ├── models.py        # Classe Recette
 │   ├── actions.py       # Logique métier (ajouter, lister, rechercher)
 │   ├── stockage.py      # Lecture/écriture du fichier JSON
-│   ├── exceptions.py    # Exceptions personnalisées
+│   ├── exceptions.py    # Exceptions
 │   └── log.py           # Configuration du logging
 ├── tests/
 │   ├── __init__.py
@@ -26,7 +26,7 @@ application_recettes/
 
 ## Utilisation de la CLI
 
-j'ajoute python3 car je suis sur linux.
+J'ajoute la version récente de Python sur la commande python3 car je suis sur linux.
 
 ### Ajouter une recette
 
