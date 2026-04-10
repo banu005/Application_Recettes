@@ -74,6 +74,12 @@ python3 -m unittest tests.test_stockage
 python3 -m unittest tests.test_exceptions
 
 # Avec pytest (si installé)
+"pour installer pytest sur linux faire bash":
+
+```bash
+sudo apt install python3-pytest
+```
+
 pytest -v # pour les tests en mode verbeux
 pytest tests/ # pour les tests en mode normal
 pytest --cov=. # pour les tests en mode normal avec couverture de code
