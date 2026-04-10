@@ -73,7 +73,9 @@ python3 -m unittest tests.test_stockage
 python3 -m unittest tests.test_exceptions
 
 # Avec pytest (si installé)
-pytest tests/
+pytest -v # pour les tests en mode verbeux
+pytest tests/ # pour les tests en mode normal
+pytest --cov=. # pour les tests en mode normal avec couverture de code
 ```
 
 ## Dépendances

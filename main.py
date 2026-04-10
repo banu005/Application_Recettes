@@ -15,7 +15,7 @@ from recette_app.exceptions import (
 
 
 def cmd_ajouter(args, recettes, logger):
-    """Commande : ajouter une nouvelle recette."""
+    # Commande : ajouter une nouvelle recette.
     ingredients = [i.strip() for i in args.ingredients.split(",") if i.strip()]
     nouvelle_recette = Recette(args.nom.strip(), ingredients, args.instructions.strip())
 
@@ -29,7 +29,7 @@ def cmd_ajouter(args, recettes, logger):
 
 
 def cmd_lister(args, recettes, logger):
-    """Commande : lister les recettes, avec filtre optionnel par ingrédient."""
+    # Commande : lister les recettes, avec filtre optionnel par ingrédient.
     if args.ingredient:
         resultats = lister_par_ingredient(recettes, args.ingredient)
         if resultats:

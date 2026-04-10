@@ -7,11 +7,8 @@ FICHIER_PAR_DEFAUT = "recettes.json"
 
 
 def charger_recettes(nom_fichier=FICHIER_PAR_DEFAUT):
-    """
-    Lit le fichier JSON et retourne une liste d'objets Recette.
-    Si le fichier n'existe pas, retourne une liste vide.
-    Lève FichierDonneesError si le fichier est corrompu.
-    """
+    # Lit le fichier JSON et retourne une liste d'objets Recette. Si le fichier n'existe pas, retourne une liste vide. 
+    # Sinon si le fichier est corrompu, on lève l'exception FichierDonneesError.
     if not os.path.exists(nom_fichier):
         return []
 
@@ -26,10 +23,8 @@ def charger_recettes(nom_fichier=FICHIER_PAR_DEFAUT):
 
 
 def sauvegarder_recettes(recettes, nom_fichier=FICHIER_PAR_DEFAUT):
-    """
-    Convertit chaque Recette en dictionnaire et écrit dans le JSON.
-    Lève FichierDonneesError en cas d'erreur d'écriture.
-    """
+    # Convertit chaque Recette en dictionnaire et écrit dans le JSON.
+    # Lève FichierDonneesError en cas d'erreur d'écriture.
     try:
         with open(nom_fichier, 'w', encoding='utf-8') as f:
             donnees = [r.to_dict() for r in recettes]

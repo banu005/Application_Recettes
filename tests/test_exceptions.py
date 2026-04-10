@@ -1,5 +1,12 @@
 import unittest
-from recette_app.exceptions import ApplicationRecetteError, RecetteInvalideError, DoublonRecetteError
+from recette_app.exceptions import (
+    ApplicationRecetteError,
+    RecetteInvalideError,
+    NomRecetteInvalideError,
+    IngredientInvalideError,
+    InstructionsInvalideError,
+    DoublonRecetteError,
+)
 
 class TestExceptions(unittest.TestCase):
     def test_exceptions_inheritance(self):

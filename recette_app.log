@@ -41,3 +41,7 @@
 2026-04-10 11:47:37,322 - ApplicationRecettes - ERROR - L'ingrédient 'e' est trop court (minimum 2 caractères).
 2026-04-10 11:48:00,672 - ApplicationRecettes - INFO - Démarrage de l'application.
 2026-04-10 11:48:00,673 - ApplicationRecettes - ERROR - Les instructions sont trop courtes (minimum 10 caractères).
+2026-04-10 11:52:24,742 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:52:24,742 - ApplicationRecettes - ERROR - L'ingrédient 'e' est trop court (minimum 2 caractères).
+2026-04-10 11:53:23,680 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:53:23,680 - ApplicationRecettes - WARNING - Cette recette existe déjà.

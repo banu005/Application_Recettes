@@ -1,12 +1,10 @@
-import logging
+import logging # Importe le module logging pour la gestion des logs
 
-LOG_FILE = "recette_app.log"
+LOG_FILE = "recette_app.log" # Nom du fichier de log
 
 def configurer_logging(verbose=False):
-    """
-    Configure le logging pour écrire dans un fichier et sur la console.
-    Si verbose=True (option --verbose), le niveau console passe en DEBUG.
-    """
+    # Configure le logging pour écrire dans un fichier et sur la console.
+    # Si verbose=True (option --verbose), le niveau console passe en DEBUG.
     logger = logging.getLogger("ApplicationRecettes")
     logger.setLevel(logging.DEBUG)
 
