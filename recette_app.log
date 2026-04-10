@@ -4,3 +4,29 @@
 2026-04-07 16:16:21,142 - ApplicationRecettes - INFO - Démarrage de l'application.
 2026-04-07 16:18:37,903 - ApplicationRecettes - WARNING - Échec de l'ajout de recette : Omelette (doublon)
 2026-04-07 16:23:02,090 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-08 23:01:43,562 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-08 23:02:41,555 - ApplicationRecettes - WARNING - Échec de l'ajout : Omelette (doublon)
+2026-04-10 10:54:18,764 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:23:40,969 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:23:40,971 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-10 11:26:05,206 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:26:05,207 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-10 11:27:38,262 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:27:38,263 - ApplicationRecettes - INFO - Nouvelle recette ajoutée : Tarte aux pommes
+2026-04-10 11:27:38,263 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-10 11:27:48,853 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:27:48,853 - ApplicationRecettes - INFO - Affichage de toutes les recettes (2 au total)
+2026-04-10 11:27:48,853 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-10 11:28:55,003 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:28:55,003 - ApplicationRecettes - ERROR - Erreur de chargement : Le fichier 'recettes.json' est corrompu ou invalide : Expecting value: line 1 column 1 (char 0)
+2026-04-10 11:29:00,300 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:29:00,301 - ApplicationRecettes - ERROR - Erreur de chargement : Le fichier 'recettes.json' est corrompu ou invalide : Expecting value: line 1 column 1 (char 0)
+2026-04-10 11:29:43,202 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:29:43,202 - ApplicationRecettes - INFO - Affichage de toutes les recettes (2 au total)
+2026-04-10 11:29:43,202 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-10 11:34:16,671 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:34:16,672 - ApplicationRecettes - INFO - Nouvelle recette ajoutée : Crêpes
+2026-04-10 11:34:16,672 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-10 11:34:20,772 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-10 11:34:20,772 - ApplicationRecettes - INFO - Affichage de toutes les recettes (3 au total)
+2026-04-10 11:34:20,772 - ApplicationRecettes - INFO - Fermeture de l'application.

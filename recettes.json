@@ -6,6 +6,27 @@
             "sel",
             "poivre"
         ],
-        "instructions": "je ne sais pas"
+        "instructions": "Casser les oeufs dans un bol, ajouter le sel et le poivre, battre le tout et cuire dans une poêle chaude."
+    },
+    {
+        "nom": "Tarte aux pommes",
+        "ingredients": [
+            "pommes",
+            "farine",
+            "beurre",
+            "sucre"
+        ],
+        "instructions": "Préparer la pâte, disposer les pommes, cuire 30min à 180°C."
+    },
+    {
+        "nom": "Crêpes",
+        "ingredients": [
+            "farine",
+            "beurre",
+            "lait",
+            "sucre vanille",
+            "sucre"
+        ],
+        "instructions": "préparer la pâte crêpes en ajoutant les ingrédients et mélanger le tout. Puis laisser poser la pâte et dans une crêpière à chauffer, ajouter la pâte et laisser cuire 5min et sortir la crêpe. Vous pouvez ajouter des toppings comme des fruits ou une pâte à tartiner au chocolat ou fraise par exemple"
     }
 ]
