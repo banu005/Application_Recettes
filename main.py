@@ -1,3 +1,4 @@
+from typing import Text
 import sys
 import argparse
 from recette_app.models import Recette
@@ -53,8 +54,16 @@ def cmd_lister(args, recettes, logger):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="recettes",
-        description="Gestionnaire de recettes en ligne de commande."
+    prog="recettes",
+    description="\nBonjour :) \n \nBienvenue dans l'application CLI de gestionnaire de recettes",
+    epilog=(
+        "Exemples d'utilisation :\n"
+        "  Ajouter une recette    : python3 main.py add \"Omelette\" --ingredients \"oeuf, sel\" --instructions \"Battre les oeufs et cuire à feu doux.\"\n"
+        "  Lister toutes          : python3 main.py list\n"
+        "  Rechercher un ingrédient: python3 main.py list --ingredient tomate\n"
+        "  Mode verbose           : python3 main.py --verbose list\n"
+    ),
+    formatter_class=argparse.RawDescriptionHelpFormatter  # ← conserve la mise en forme
     )
     parser.add_argument(
         "--verbose", "-v",
