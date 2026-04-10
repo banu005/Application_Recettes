@@ -6,22 +6,23 @@ Application en ligne de commande pour gérer une collection de recettes de cuisi
 
 ```
 Application_Recettes/
-├── main.py
 ├── recette_app/
-│   ├── __init__.py
+│   ├── __init__.py # pour que le dossier soit reconnu comme un package
 │   ├── models.py        # Classe Recette
 │   ├── actions.py       # Logique métier (ajouter, lister, rechercher)
 │   ├── stockage.py      # Lecture/écriture du fichier JSON
 │   ├── exceptions.py    # Exceptions
 │   └── log.py           # Configuration du logging
-├── tests/
+├── tests/ # pour les tests
 │   ├── __init__.py
 │   ├── test_actions.py
-│   ├── test_stockage.py
-│   └── test_exceptions.py
-├── recettes.json
-├── requirements.txt
-└── README.md
+│   ├── test_exceptions.py
+│   └── test_stockage.py
+├── main.py # pour lancer l'application
+├── README.md 
+├── recettes.json # pour afficher les recettes enregistrées
+├── recette_app.log # pour les logs
+├── requirements.txt # pour les dépendances
 ```
 
 ## Utilisation de la CLI
