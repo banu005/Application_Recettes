@@ -79,3 +79,37 @@
 2026-04-10 14:33:33,845 - ApplicationRecettes - INFO - Démarrage de l'application.
 2026-04-10 14:33:33,845 - ApplicationRecettes - INFO - Affichage de toutes les recettes (3 au total)
 2026-04-10 14:33:33,845 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 13:49:09,569 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 13:49:09,956 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 13:50:22,900 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 13:50:22,901 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:01:44,424 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:01:44,424 - ApplicationRecettes - INFO - Affichage de toutes les recettes (3 au total)
+2026-04-14 14:01:44,424 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:03:48,165 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:03:48,165 - ApplicationRecettes - ERROR - Les instructions sont trop courtes (minimum 10 caractères).
+2026-04-14 14:04:11,186 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:04:11,186 - ApplicationRecettes - INFO - Nouvelle recette ajoutée : test
+2026-04-14 14:04:11,186 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:04:14,645 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:04:14,645 - ApplicationRecettes - INFO - Affichage de toutes les recettes (4 au total)
+2026-04-14 14:04:14,646 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:10:47,685 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:10:47,686 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:12:07,690 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:12:07,691 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:20:10,100 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:20:10,101 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:32:51,602 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:32:51,604 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:33:10,361 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:33:10,362 - ApplicationRecettes - INFO - Affichage de toutes les recettes (3 au total)
+2026-04-14 14:33:10,362 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:35:38,279 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:35:38,280 - ApplicationRecettes - INFO - Nouvelle recette ajoutée : tasty crousty
+2026-04-14 14:35:38,280 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:35:43,094 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:35:43,095 - ApplicationRecettes - INFO - Affichage de toutes les recettes (4 au total)
+2026-04-14 14:35:43,095 - ApplicationRecettes - INFO - Fermeture de l'application.
+2026-04-14 14:36:21,364 - ApplicationRecettes - INFO - Démarrage de l'application.
+2026-04-14 14:36:21,366 - ApplicationRecettes - INFO - Fermeture de l'application.

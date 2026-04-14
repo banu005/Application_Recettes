@@ -63,7 +63,7 @@ def main():
         "  Rechercher un ingrédient: python3 main.py list --ingredient tomate\n"
         "  Mode verbose           : python3 main.py --verbose list\n"
     ),
-    formatter_class=argparse.RawDescriptionHelpFormatter  # ← conserve la mise en forme
+    formatter_class=argparse.RawDescriptionHelpFormatter  # conserve la mise en forme
     )
     parser.add_argument(
         "--verbose", "-v",
